@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <title>CineStream</title>
+</head>
+
+<body>
+    <div class="cabecera">
+        <div class="anchocabecera">
+            <nav class="navbar">
+                <div class="logo">CineStream</div>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Películas</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">LISTADO</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+
+    <div class="imagen-slider">
+        <div id="banners">
+            <img class="imagenes-banners" src="img/banners/angrybirds.png">
+
+
+        </div>
+        <div class="botonesSigAnt">
+            <button class="b-anterior" onclick="beforeImage()">-</button>
+            <button class="b-siguiente" onclick="nextImage()">+</button>
+        </div>
+        <script>
+            var slider_content = document.getElementById('banners');
+
+            var image = ["angrybirds", "comosifueralaprimeravez", "habiaunavezenhollywood", "historiasmiedo", "it", "angrybirds"];
+
+            var i = image.length;
+
+            function nextImage() {
+                if (i < image.length) {
+                    i = i + 1;
+                    if (i == image.length) {
+                        i = 1;
+                    }
+                } else {
+                    i = 1;
+                }
+                slider_content.innerHTML = "<img class=\"imagenes-banners\" src=\"img/banners/" + image[i] + ".png\">";
+            }
+
+            function beforeImage() {
+                if (i < image.length + 1 && i > 1) {
+                    i = i - 1;
+                } else {
+                    i = image.length;
+                }
+                slider_content.innerHTML = "<img class=\"imagenes-banners\" src=img/banners/" + image[i - 1] + ".png>";
+            }
+        </script>
+    </div>
+</div>
+</div>
+</div>
+    <div class="peliculas">
+        <h2>Ultimos Estrenos 2025</h2>
+        <div class="listapeliculas">
+            <div class="pelicula-info">
+                <img src="img/peliculas/angrybirds.jpg">
+                <button type="button" class="mi-boton btn btn-primary">Ver Pelicula</button>
+            </div>
+            <div class="pelicula-info">
+                <img src="img/peliculas/dora.jpg">
+                <button type="button" class="mi-boton btn btn-primary">Ver Pelicula</button>
+            </div>
+            <div class="pelicula-info">
+                <img src="img/peliculas/historias.jpg">
+                <button type="button" class="mi-boton btn btn-primary">Ver Pelicula</button>
+            </div>
+            <div class="pelicula-info">
+                <img src="img/peliculas/it.jpg">
+                <button type="button" class=" mi-boton btn btn-primary">Ver Pelicula</button>
+            </div>
+        </div>
+        <div class="peliculas">
+        <h2>Ultimos Agregados</h2>
+            <div class="listapeliculas">
+            <div class="pelicula-info">
+                <img src="img/peliculas/agente.jpg">
+                <button type="button" class="mi-boton btn btn-primary">Ver Pelicula</button>
+            </div>
+            <div class="pelicula-info">
+                <img src="img/peliculas/agente.jpg">
+                <button type="button" class="mi-boton btn btn-primary">Ver Pelicula</button>
+            </div>
+            <div class="pelicula-info">
+                <img src="img/peliculas/agente.jpg">
+                <button type="button" class="mi-boton btn btn-primary">Ver Pelicula</button>
+            </div>
+            <div class="pelicula-info">
+                <img src="img/peliculas/agente.jpg">
+                <button type="button" class="mi-boton btn btn-primary">Ver Pelicula</button>
+            </div>
+            <div class="pelicula-info">
+                <img src="img/peliculas/agente.jpg">
+                <button type="button" class="mi-boton btn btn-primary">Ver Pelicula</button>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        setInterval('nextImage()', 3000);
+    </script>
+</body>
+
+</html>
