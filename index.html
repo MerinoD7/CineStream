@@ -17,7 +17,7 @@
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Películas</a></li>
                     <li><a href="#">Series</a></li>
-                    <li><a href="#">LISTADO</a></li>
+                    <li><a href="/html/Listado-peliculas.html">LISTADO</a></li>
                 </ul>
                 <div class="search-box">
                     <input type="text" placeholder="Buscar...">
@@ -27,7 +27,7 @@
 
     <div class="imagen-slider">
         <div id="banners">
-            <img class="imagenes-banners" src="img/banners/angrybirds.png">
+            <img class="imagenes-banners" src="img/banners/angrybirds.jpg">
 
 
         </div>
@@ -51,7 +51,7 @@
                 } else {
                     i = 1;
                 }
-                slider_content.innerHTML = "<img class=\"imagenes-banners\" src=\"img/banners/" + image[i] + ".png\">";
+                slider_content.innerHTML = "<img class=\"imagenes-banners\" src=\"img/banners/" + image[i] + ".jpg\">";
             }
 
             function beforeImage() {
@@ -60,7 +60,7 @@
                 } else {
                     i = image.length;
                 }
-                slider_content.innerHTML = "<img class=\"imagenes-banners\" src=img/banners/" + image[i - 1] + ".png>";
+                slider_content.innerHTML = "<img class=\"imagenes-banners\" src=img/banners/" + image[i - 1] + ".jpg>";
             }
         </script>
     </div>
@@ -71,8 +71,8 @@
         <h2>Ultimos Estrenos 2025</h2>
         <div class="listapeliculas">
             <div class="pelicula-info">
-                <img src="img/peliculas/angrybirds.jpg">
-                <button type="button" class="mi-boton btn btn-primary">Ver Pelicula</button>
+                <img src="/img/banners/3lZndt1.jpg">
+                <a href="/html/2025/Series/The-Last-Of-Us/The-last-of-us-2x1-2025.html"><button type="button" class="mi-boton btn btn-primary">Ver Serie</button></a>
             </div>
             <div class="pelicula-info">
                 <img src="img/peliculas/dora.jpg">
@@ -115,16 +115,16 @@
 </div>
             </div>
         </div>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '18e255e4bda7cf06cd64bb9e499172a3',
-		'format' : 'iframe',
-		'height' : 600,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//installationtruckuseful.com/18e255e4bda7cf06cd64bb9e499172a3/invoke.js"></script>
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '18e255e4bda7cf06cd64bb9e499172a3',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//installationtruckuseful.com/18e255e4bda7cf06cd64bb9e499172a3/invoke.js"></script>
     </div>
     <script>
         setInterval('nextImage()', 3000);
